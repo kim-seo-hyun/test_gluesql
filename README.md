@@ -1,11 +1,11 @@
 # test_gluesql
 
 ### Installation
-```
+```sh
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-```
+```sh
 $ rustc --v
 $ cargo new test_gluesql
 $ cargo run
@@ -18,10 +18,10 @@ gluesql = "0.11"
 ```
 
 ### Usage
-```
+```sh
 $ notepad .\src\main.rs
 ```
-```
+```rs
 use gluesql::prelude::*;
 fn main() {
     let storage = SledStorage::new("data/doc-db").unwrap();
@@ -41,7 +41,7 @@ fn main() {
 ```
 
 ### Build
-```
+```sh
 $ cargo build
    Compiling test_gluesql v0.1.0 (C:\Users\ASUS\Desktop\test_gluesql)
     Finished dev [unoptimized + debuginfo] target(s) in 9.94s
